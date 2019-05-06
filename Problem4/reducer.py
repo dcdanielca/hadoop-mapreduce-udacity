@@ -12,3 +12,6 @@ for current_request in sys.stdin:
         hits = 0
     old_request = current_request
     hits += 1
+
+if old_request:  
+    print(old_request, '\t', hits)
