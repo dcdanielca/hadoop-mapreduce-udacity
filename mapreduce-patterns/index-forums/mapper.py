@@ -8,7 +8,7 @@ writer = csv.writer(sys.stdout, delimiter='\t', quotechar='"', quoting=csv.QUOTE
 
 for line in reader:
     try:
-        words = re.split(r'\n| |\.|,|!|\?|:|;|"|\(|\)|<\w*>|</\w*>|\<|\>|\[|\]|#|$|=|-|/|', line[4])
+        words = re.split(r'\n| |\.|,|!|\?|:|;|"|\(|\)|<\w*>|</\w*>|\<|\>|\[|\]|#|$|=|-|/', line[4])
 
         for word in words:
             if word not in [None, '']:
